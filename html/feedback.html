@@ -1,0 +1,167 @@
+<!--General Setup-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- use utf-8 encoding character set-->
+        <meta charset="utf-8">
+        <!--tab title will appear as the following-->
+        <title>Jayden Yap-Feedback</title>
+        <!--css linking-->
+        <link href="../css/navbar.css" rel="stylesheet"/>
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+
+    <body class="bg-dark text-light">
+        <!--navbar-->
+        <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+            <div class="container">
+                <a class="navbar-brand" href="../html/home.html">Jayden Yap.com</a>
+                <a class="nav-item nav-link" href="../html/interests_1.html">Interests</a>
+                <a class="nav-item nav-link" href="../html/sec_1.html">Secondary School</a>
+                <a class="nav-item nav-link" href="../html/poly_future.html">Poly and Future</a>
+                <a class="nav-item nav-link active" href="../html/feedback.html">Feedback</a>
+                <!--Dark and light theme switch-->
+                <button class="nav-item bg-dark text-primary" onclick="darkMode()" id="theme">
+                    <img id="sun" src="../Photos/sun_icon.png"></img>Theme
+                </button>
+            </div>
+        </nav>
+
+        <!--Intro header and paragraph-->
+        <br><br>
+        <div class="container-fluid">
+            <h1>Feedback Form</h1>
+            <p class="text-muted lead">Your feedback is invaluable to my learning experience, thank you for your time :)</p>
+
+            <!--Form-->
+            <form>
+                <!--Personal Details Fieldset-->
+                <fieldset class="form-group">
+                    <div class="form-group">
+                        <label class="form-control-label text-primary" for="email">E-mail Address</label><br>
+                        <input class="form-control" type="email" id="email" value="example@gmail.com" size="35">
+                        <!--button to validate to the email address with javascript-->
+                        <button onclick="emailValidate()">Validate</button>
+                        <br><br>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label text-primary" for="fname">Full Name:</label><br>
+                        <input class="form-control" type="text" id="fname" value="Jayden Yap"><br><br>
+                    </div>
+                </fieldset><br>
+
+                <!--Radio Option selecting questions-->
+                <fieldset class="form-group">
+                    <div class="form-group">
+                        <!--Question 1-->
+                        <label class="text-primary">How satisfied were you with my website's visuals? (Colours, fonts,layout,etc)</label>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="visuals" value="vsat"> Very Satisfied
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="visuals" value="sat"> Satisfied
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="visuals" value="unsat"> Unsatisfied
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="visuals" value="vunsat"> Very Unsatisfied
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <!--Question 2-->
+                    <div class="form-group">
+                        <label class="text-primary">How satisfied were you with my website's content? (Text,table,images etc)</label>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="content" value="vsat"> Very Satisfied
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="content" value="sat"> Satisfied
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="content" value="unsat"> Unsatisfied
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="content" value="vunsat"> Very Unsatisfied
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <!--Question 3: multiple options select-->
+                    <div class="form-group">
+                        <label class="text-primary">Which elements of the website did you enjoy the most?</label>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="elements" value="form"> This Feedback Form
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="elements" value="tt"> Study Timetable
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="elements" value="imgs"> Images
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="elements" value="colour"> Colour Scheme
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <!--Question 4: Range slider, with javascript to display value of the slider-->
+                    <div class="form-group">
+                        <label class="text-primary">How would your rate your experience on this website overall? (On a scale of 1-10)</label>
+                        <div class="form-check container">
+                            <input id="FormRange" type="range" class="form-control-range slider" min="1" max="10" step="1">
+                            <p class="text-center text-warning">Value: <span id="demo"></span></p>
+                        </div>
+                    </div>
+                </fieldset><br>
+
+                <!--Other feedback textbox-->
+                <fieldset class="form-group">
+                    <label class="form-control-label text-primary" for="other">Other Feedback</label><br>
+                    <textarea class="form-control" id="other" name="other" rows="4" cols="65">Please enter any other feedback here (example: I like the colour scheme)
+                    </textarea>
+                    <br>
+                    <!--Submit button currently does nothing-->
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </fieldset><br>
+            </form>
+        </div>
+        <!--bootstrap scripts-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!--script for form slider displaying value-->
+        <script src="../js/formSlider.js"></script>
+
+        <!--script for theme button to switch to and from light and dark mode-->
+        <script src="../js/darkMode.js"></script>
+
+        <!--script for email validation button in form-->
+        <script src="../js/emailValid.js"></script>
+    </body>
+</html>

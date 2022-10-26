@@ -1,0 +1,12 @@
+/*All images to be small (premiere pro icon)*/
+img{
+    width:40px;
+}
+
+img#src{
+    width:auto;
+}
+
+iframe{
+    border: none;
+}

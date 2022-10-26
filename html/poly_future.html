@@ -1,0 +1,127 @@
+<!--General Setup-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- use utf-8 encoding character set-->
+    <meta charset="utf-8">
+    <!--tab title will appear as the following-->
+    <title>Jayden Yap-Poly and Future</title>
+    <!--css linking-->
+    <link href="../css/navbar.css" rel="stylesheet"/>
+    <link href="../css/poly_future.css" rel="stylesheet"/>
+    
+    <!--bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<!--using bootstrap classes, set background to dark and text to light colours-->
+<body class="bg-dark text-light">
+    <!--navbar-->
+    <nav class="navbar  bg-dark navbar-dark navbar-expand-sm">
+        <div class="container">
+            <a class="navbar-brand" href="../html/home.html">Jayden Yap.com</a>
+            <a class="nav-item nav-link" href="../html/interests_1.html">Interests</a>
+            <a class="nav-item nav-link" href="../html/sec_1.html">Secondary School</a>
+            <a class="nav-item nav-link active" href="../html/poly_future.html">Poly and Future</a>
+            <a class="nav-item nav-link" href="../html/feedback.html">Feedback</a>
+            <!--Dark and light theme switch-->
+            <button class="nav-item bg-dark text-primary" onclick="darkMode()" id="theme">
+                <img id="sun" src="../Photos/sun_icon.png"></img>Theme
+            </button>
+        </div>
+    </nav>
+
+    <!--bootstrap fluid class so that elements are always -->
+    <div class="container-fluid">
+        <!--SP header and intro paragraphs-->
+        <h1 class="d-block">Singapore Polytechnic</h1>
+        <h2 class="text-warning d-block"><cite>so possible</cite></h2>
+        <img class="img-fluid rounded" src="../Photos/me_laptop.jpeg" alt="me doing work on laptop">
+        <p class="lead">Enrolling into SP was an exciting experience. Returning to having school after a almost 6 month break was refreshing, especially since poly is such a different environment from secondary and primary school. It took a few days to get used to the travelling, the laptop usage, the lessons, the campus, and the food, but I feel relatively at home here now.
+        </p>
+    
+        <!--Content Paragraphs-->
+        <p class="lead">The flipped classroom format has been 
+            interesting to say the least, the huge emphasis on self-directed learning had me stumped at first,
+            as I thought it was strange that I am expected to learn things on my own at home when I enrolled 
+            in the school so I could learn everything at said school, but I now have adjusted and can
+            see the benefits of this approach now.
+        </p>
+        <p class="text-light lead">Another perk of poly life is being able to eat at pretty
+            sophisticated food courts. Here is my review of the food courts in SP 
+        </p>
+        <br><br><br>
+
+        <!--Review time in 2 rows of 3 columns each. Displayed in 3 columns on dekstop, 2 on tablet, 1 on phones-->
+        <h1>FOODCOURT REVIEW TIME</h1>
+        <br><br>
+        <!--Row 1-->
+        <div class="row justify-content-center">
+            <!--FC1-->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <img class="img-fluid rounded" src="../Photos/FC1.jpg" alt="FC1 photos">
+                <p class="lead"><cite>FC1: "It's insane that the curry rice gives huge portions at only $5. In fact, it was <strong>far too big of a portion</strong>, it practically left me and my friends in a food coma. Would recommend but be sure to share one plate with someone else." 
+                </cite></p>
+            </div>
+            <!--FC2-->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <img class="img-fluid rounded" src="../Photos/FC2.jpg" alt="FC2 photos">
+                <p class="lead"><cite>FC2: "I haven't actually dined at FC2 yet, but the environment looks alright, it has AC, and the SP shirts happen to be sold here as well so bonus points for that i guess ;)"
+                </cite></p>
+            </div>
+            <!--FC3-->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <img class="img-fluid rounded" src="../Photos/FC3.jpg" alt="FC3 photos">
+                <p class="lead"><cite>FC3: "I haven't dined at FC3 before, it has no AC, and I have heard that many of the good stalls at FC3 are gone now, worth a try in the future  though."
+                </cite></p>
+            </div>
+        </div>
+        <br>
+        <!--Row 2-->
+        <div class=" row justify-content-center">
+            <!--FC4-->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <img class="img-fluid rounded" src="../Photos/FC4.jpg" alt="FC4 photos">
+                <p class="lead"><cite>FC4: "This has been <strong>THE go-to food court</strong>. Good variety of stalls at decent prices, especially chicken rice stall. That and Taiwan cuisine have my favourites. FC4 is located just at the business school so it is near SoC. Definitely the top food court overall."
+                </cite></p>
+            </div>
+            <!--FC5-->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <img class="img-fluid rounded" src="../Photos/FC5.jpg" alt="FC5 photos">
+                <p class="lead"><cite>FC5: "It is simply Subway, KFC and some smaller stalls put together. Pretty cool food court though, because you would never see something like this outside of polytechnic. Food was as expected. FC5 is actually located at a reasonable distance away from SoC so it is fairly convenient."
+                </cite></p>
+            </div>
+            <!--FC6-->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <img class="img-fluid rounded" src="../Photos/FC6.jpg" alt="FC6 photos">
+                <p class=" lead"><cite>FC6: "FC6 is a <strong>strange</strong> food court. When I first visited it, it reminded me of a school canteen. Everything from the design of the stalls, the benches and tables were giving me school canteen vibes. However, the food prices seem quite high. Props to the waffle store though! Bonus points for the convenience too."
+                </cite></p>
+            </div>
+        </div>
+        <br><br><br>
+
+        <!--Future Career header and 2 paragraphs-->
+        <h1 class="text-warning">My Future Career</h1>
+        <p class="lead">The dreamjob for me would be video game development seeing how passionate I am about games. but seeing that there are limited opportunities for that in Singapore, that dream may not be very practical for me in the near future. With my IT knowledge and specialization in AI coming out of poly.</p>
+        <p class="lead">I hope to be able to eventually achieve this sometime in my life, but I am also content with working in the IT space until then. There should be plenty of opportunities awaiting me, including machine learning among other IT related things. However, I have not put too much thought into my career yet, so I shall wait and see as poly life goes on.
+        </p>
+    </div>
+
+
+    <!--Back to top button-->
+    <div class="text-center">
+        <br><br>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div>
+
+    <!--bootstrap scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--script for scroll to top button-->
+    <script src="../js/scrollToTop.js"></script>
+    <!--script for theme button to switch to and from light and dark mode-->
+    <script src="../js/darkMode.js"></script>
+</body>
+</html>

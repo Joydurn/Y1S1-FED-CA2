@@ -1,0 +1,124 @@
+<!--General Setup-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- use utf-8 encoding character set-->
+        <meta charset="utf-8">
+        <!--tab title will appear as the following-->
+        <title>Jayden Yap-Home</title>
+        <!--css linking-->
+        <link href="../css/navbar.css" rel="stylesheet"/>
+        <link href="../css/interests_1.css" rel="stylesheet"/>
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+
+<!--using bootstrap classes, set background to dark and text to light colours-->   
+<body class="bg-dark text-light">
+    <!--navbar-->
+    <nav class="navbar  bg-dark navbar-dark navbar-expand-sm">
+        <div class="container">
+            <a class="navbar-brand" href="../html/home.html">Jayden Yap.com</a>
+            <a class="nav-item nav-link active" href="../html/interests_1.html">Interests</a>
+            <a class="nav-item nav-link" href="../html/sec_1.html">Secondary School</a>
+            <a class="nav-item nav-link" href="../html/poly_future.html">Poly and Future</a>
+            <a class="nav-item nav-link" href="../html/feedback.html">Feedback</a>
+            <!--Dark and light theme switch-->
+            <button class="nav-item bg-dark text-primary" onclick="darkMode()" id="theme">
+                <img id="sun" src="../Photos/sun_icon.png"></img>Theme
+            </button>
+        </div>
+    </nav>
+
+    <!--interest 1: video editing-->
+    <!--Header with logos of adobe premiere software to the side-->
+    <header class="container">
+        <br><br>
+        <h1 class="bg- text-primary text-center"><img class="img-fluid" src="../Photos/adobe_icon.jpg" alt="Adobe Premiere Icon">
+        VIDEO EDITING<img class="img-fluid" src="../Photos/adobe_icon.jpg" alt="Adobe Premiere Icon">
+        </h1>
+    </header>
+
+    <!--Intro paragraph-->
+    <p class="lead text-center">
+        I grew up watching streaming services like Youtube in its early stages and loved how it gave opportunity for anyone to entertain others with videos.
+         I have been trying my hand at video editing myself from time to time for a long time now. Starting with amateur software like Windows Movie Maker,
+        and eventually learning to use adobe premiere pro. It was a fun experience learning just from toying around with the software. While I never made
+         anything groundbreaking, I’m proud of being able to entertain friends and even strangers with some of my ‘hit’ videos. <strong>Check out my past projects down below!</strong>
+    <br><br></p>
+
+    <!--Embedded youtube links with captions-->
+    <p class="bg-warning text-center text-dark">2016-2017: These are not my first videos, I regretably deleted my oldest ones back in 2014-2015 from youtube
+    </p>
+    <!--Bootstrap row class with 3 columns. On desktop, 3 columns displayed. On tablets, 2. On phones, 1.-->
+    <div class="row row-cols-3">
+        <iframe class="col" width="560" height="315" src="https://www.youtube.com/embed/Ld82iNY_QCo" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <iframe class="col" width="560" height="315" src="https://www.youtube.com/embed/BABpflT2bSM" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <iframe class="col" width="560" height="315" src="https://www.youtube.com/embed/Wh8YISnX-Uo" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    <br><br>
+
+
+    <p class="bg-warning text-center text-dark">2019-2020: Some of these are pretty epic i'd say
+    </p>
+    <!--Bootstrap row class with 3 columns. On desktop, 3 columns displayed. On tablets, 2. On phones, 1.-->
+    <div class="row row-cols-3">
+        <iframe class="col" width="560" height="315" src="https://www.youtube.com/embed/TAc9WS866bw" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <iframe class="col" width="560" height="315" src="https://www.youtube.com/embed/0DqeBHPfYPc" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <iframe class="col" width="560" height="315" src="https://www.youtube.com/embed/VhFqEhLxTb0" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div><br><br><br>
+
+    <!--interest 2: speedrunning-->
+    <!--header-->
+    <h1 class="text-primary text-center">SPEEDRUNNING</h1>
+    <h2 class="lead text-muted text-center"> A speedrun is a play-through of a whole video game or a selected part of it (such as a single level), performed with the intention of completing it as fast as possible.
+    </h2>
+
+    <!--paragraphs-->
+    <p class="text-center">I have a huge interest in video games in general, but one thing I’ve been getting into is speedrunning which is fairly niche. When I played Resident Evil 2, a survival horror game that I loved, I decided to get into the speedrunning community of the game (my first speedrun game). I did this by watching streamers on the platform Twitch who also speedran the game, learning from them and meeting many great people along the way.
+    </p><br>
+    <div class="row">
+        <div class="col-12 col-sm-6">
+            <h2 class="text-white">Speedrun.com<img class="img-fluid rounded" src="../Photos/speedrun_icon.jpg" alt="Speedrun.com logo">
+            </h2>
+            <img class="img-fluid rounded" id="src" src="../Photos/speedrun_website.PNG" alt="Speedrun.com logo">
+            <p class="lead"><a class="d-inline nav-item nav-link" href="https://www.speedrun.com">Speedrun.com</a>is a website where speedrunners share their times and compete on a leaderboard for specific categories in certain games.
+            </p>
+            
+        </div>
+        <div class="col-12 col-sm-6">
+            <h2 class="text-white">World Record</h2>
+                <!--responsive embed class from bootstrap-->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ukf1iMO6ycY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            <p class="lead">I was able to obtain a world record for myself! This means being the fastest on a certain category. check it out here
+            </p>
+        </div>
+    </div>
+    
+    <!--Back to top button-->
+    <div class="text-center">
+        <br><br>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div>
+    <!--bootstrap scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--script for scroll to top button-->
+    <script src="../js/scrollToTop.js"></script>
+    <!--script for theme button to switch to and from light and dark mode-->
+    <script src="../js/darkMode.js"></script>
+
+
+</body>
+</html>

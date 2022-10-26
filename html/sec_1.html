@@ -1,0 +1,161 @@
+<!--General Setup-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- use utf-8 encoding character set-->
+    <meta charset="utf-8">
+    <!--tab title will appear as the following-->
+    <title>Jayden Yap-Secondary School</title>
+    <!--css linking-->
+    <link href="../css/navbar.css" rel="stylesheet"/>
+    <link href="../css/sec_1.css" rel="stylesheet"/>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<!--using bootstrap classes, set background to dark and text to light colours-->
+<body class="bg-dark text-light">
+    <!--navbar--> 
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+        <div class="container">
+            <a class="navbar-brand" href="../html/home.html">Jayden Yap.com</a>
+            <a class="nav-item nav-link" href="../html/interests_1.html">Interests</a>
+            <a class="nav-item nav-link active" href="../html/sec_1.html">Secondary School</a>
+            <a class="nav-item nav-link" href="../html/poly_future.html">Poly and Future</a>
+            <a class="nav-item nav-link" href="../html/feedback.html">Feedback</a>
+            <!--Dark and light theme switch-->
+            <button class="nav-item bg-dark text-primary" onclick="darkMode()" id="theme">
+                <img id="sun" src="../Photos/sun_icon.png"></img>Theme
+            </button>
+        </div>
+    </nav>
+    
+    <!--CCA-->
+    <!--Header-->
+    <!--Bootstrap row class with 3 columns. On desktop, 3 columns displayed. On tablets, 2. On phones, 1.-->
+    <div class="container-fluid row">
+
+        <div class="col-12 col-sm-6 col-lg-4">
+            <h1>CCA:</h1>
+            <h2 class="text-muted">English Language Drama and Debate Society (ELDDS)</h2>
+            <h3 class="text-warning">Debate</h3>
+            <img id="debate" class="img-fluid rounded" src="../Photos/me_debate.jpeg" alt="Me in Debate Competition">
+            <p class="lead">Unlike most people in the CCA, I participated in both wings of the CCA, drama and debate, 
+                I started out with debate in sec1-2, and it was a very interesting experience. 
+               It had way less members than drama so I was able to make close friends there. Debate was all about research and speaking. 
+                I participated in a few competitions and they were all very eventful experiences for me. 
+            </p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+            <h1 class=>CCA:</h1>
+            <h2 class="text-muted">English Language Drama and Debate Society (ELDDS)</h2>
+            <h3 class="text-warning">Drama</h3>
+            <img class="img-fluid rounded" src="../Photos/eldds_grad.jpeg" alt="ELDDS Exco Graduation">
+            <p class="lead">The amount of homework required for researching in debate was starting to get too much for
+                me so I decided to join the drama wing fully in sec 3.On the drama side, I learned to act and                    insert exco photo, play photo
+                more importantly, lead as I was vice-president of the CCA in sec 3-4. I learned to collaborate
+                with my great exco friends on big plays and had a lot of fun along the way.
+            </p>
+        </div>
+
+        <div class="col-12 col-sm-12 col-lg-4">
+            <h1>O-levels</h1>
+            <h2 class="text-warning">the final boss</h2>
+            <p class="lead">The o-levels examination at the end of secondary 4 was quite the journey. Surprisingly, 
+                        some of my fondest memories of secondary school come from the quiet final lessons we 
+                        had before our exams. Where our teachers were truly trying to help us as much as they could,
+                        and me and my friends who I had been with for years were all working towards the same goal
+                        of succeeding at the exams.  
+            </p>
+            <img class="img-fluid rounded" src="../Photos/grad_photo.jpg" alt="graduation with friends">
+        </div>
+    </div>
+
+
+    <!--table-->
+    <br><br>
+    <div class="container">
+        <!--intro paragraph with gradient effect header-->
+        <h1 id="timetable" class="text-center">Study Timetable</h1>
+        <p class="lead">
+            After graduation, to prepare for the exams, I knew I had to cut down on my computer 
+            time, I did this by setting up a timetable for my studies on a mobile app.
+            It took a while to set up but it was well worth it because all it took
+            to see what I was supposed to do was a quick check on my phone. Check out the timetable below!
+        </p>
+        <br><br>
+        <!--additional div to enable for horizontal scrolling of table in css-->
+        <div id="scroll">
+            <table id="timetable" class="table table-striped">
+                <thead>
+                    <!--Days header row-->
+                    <tr>
+                        <th></th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Timetable rows with different colours for different subjects-->
+                    <tr>
+                        <!--1.30 to 3pm-->
+                        <th>1.30</th>
+                        <td colspan="5">Rest after school</td>
+                        <td class="CHEM" colspan="2">Chemistry TYS</td>
+                    </tr>
+                    <tr>
+                        <!--3 to 4.30pm-->
+                        <th>3.00</th>
+                        <td class="AM">A-Math TYS</td>
+                        <td class="PHY">Physics TYS</td>
+                        <td class="EM">E-Math TYS</td>
+                        <td class="CHEM">Chemistry TYS</td>
+                        <td class="AM">A-Math TYS</td>
+                        <td colspan="2">Break time</td>
+                    </tr>
+                    <tr>
+                        <!--4.30 to 6pm-->
+                        <th>4.30</th>
+                        <td colspan="5">Break time</td>
+                        <td class="PHY" colspan="2">Physics TYS</td>
+                    </tr>
+                    <tr>
+                        <!--6 to 7.30pm-->
+                        <th>6.00</th>
+                        <td class="CHEM" colspan="2">Chemistry TYS</td>
+                        <td class="PHY" colspan="3">Physics TYS</td>
+                        <td>Break time</td>
+                        <td rowspan="2">Rest for night</td>
+                    </tr>
+                    <tr>
+                        <!--7.30 to 9pm-->
+                        <th>7.30</th>
+                        <td colspan="5">Rest for night</td>
+                        <td class="AM">A-Math TYS</td>
+                      </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--Back to top button-->
+    <div class="text-center">
+        <br><br>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div>
+    <!--bootstrap scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--script for scroll to top button-->
+    <script src="../js/scrollToTop.js"></script>
+    <!--script for theme button to switch to and from light and dark mode-->
+    <script src="../js/darkMode.js"></script>
+</body>
+</html>

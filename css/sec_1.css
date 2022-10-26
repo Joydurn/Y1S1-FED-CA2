@@ -1,0 +1,57 @@
+/*Image sizing*/
+img#debate{
+    filter: grayscale(100);
+}
+
+
+h1#timetable{
+    background: -webkit-linear-gradient(rgb(7, 173, 195), rgb(250, 153, 226));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Table horizontal scrolling automatic*/
+div#scroll{
+    overflow-x:auto;
+}
+
+
+/*Table styling*/
+table{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+th,td{
+    border: 1px solid #C5C6C7;
+    text-align:center;
+}
+
+
+/*Class colouring within table*/
+td.AM{
+    background-color:#66FCF1;
+    color: black;
+}
+
+td.EM{
+    background-color:greenyellow;
+    color:black;
+}
+
+td.CHEM{
+    background-color:brown;
+    color:white;
+}
+
+td.PHY{
+    background-color: orange;
+    color:black;
+}
+
+/*Center the back to top button*/
+form{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+

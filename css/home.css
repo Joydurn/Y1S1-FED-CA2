@@ -1,0 +1,41 @@
+ /* Carousel styling */
+ /* Carousel items height to fill up rest of viewport*/
+ #introCarousel,
+ .carousel-inner,
+ .carousel-item,
+ .carousel-item.active {
+   height: 90vh;
+ }
+
+/*Slide 1 background image repeat*/
+ .carousel-item:nth-child(1) {
+   background-image: url('../Photos/me_distorted.jpg');
+   background-repeat: repeat;
+   background-size: 400px;
+   background-position: center center;
+ }
+
+ /*Slide 2 background image repeat*/
+ .carousel-item:nth-child(2) {
+   background-image: url('../Photos/me_pog.jpeg');
+   background-repeat: repeat;
+   background-size: 400px;
+   background-position: center center;
+ }
+
+ /*Slide 3 background image repeat*/
+ .carousel-item:nth-child(3) {
+   background-image: url('../Photos/me_sleeping.jpg');
+   background-repeat: repeat;
+   background-size: 400px;
+   background-position: center center;
+ }
+
+
+
+
+
+
+
+
+

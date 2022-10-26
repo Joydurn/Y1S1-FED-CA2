@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*Active Tab to have darker blue colour*/
+a.active{
+    color: aliceblue;
+    border: 1px solid blue;
+}
+
+/*Sun image for theme button to be smaller*/
+img#sun{
+    width:30px;
+}
+
+
+  
